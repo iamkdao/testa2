@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>CS4241 Assignment 2</title>
+        <meta charset="utf-8">
+        <script src="/js/client.js"></script>
+        <link rel="stylesheet" href="/css/main.css">
+
+        <!-- get rid of favicon error -->
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    </head>
+    <body>
+        <h1 class="graffiti">Awesome To-do App</h1>
+        <form id="todo-form">
+            <label>Task name: </label>
+            <input id="task" placeholder="Task" required /> <br>
+
+            <label>Write the description: </label>
+            <textarea id="description"
+                placeholder="Write the description"></textarea> <br>
+
+            <label>Deadline date: </label>
+            <input type="date" id="deadline" /> <br>
+
+            <label>Priority of task: </label>
+            <select id="priority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <button class="submit-btn button-53 graffiti">Add</button>
+        </form>
+    </body>
+</html>

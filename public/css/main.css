@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sedgwick+Ave+Display&display=swap');
+
+body {
+    background: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.graffiti {
+    font-family: "Sedgwick Ave Display", cursive;
+}
+
+h1 {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Button */
+.button-53 {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .5rem 1rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #ffffff solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 150px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-53:focus {
+    outline: 0;
+}
+
+.button-53:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #ffffff;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+.submit-btn:hover {
+    color: white;
+    font-size: 130%;
+}
+
+/* Big button */
+.big-button {
+    background-color: #3de79d;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    line-height: 3rem;
+    max-width: none;
+    margin-top: 50px;
+
+    position: relative;
+    text-align: center;
+    text-decoration: none #ffffff solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-1.5deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.big-button:hover {
+    color: white;
+    font-size: 2.2rem;
+}
+
+.big-button:focus {
+    outline: 0;
+}
+
+.big-button:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #ffffff;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+.big-button:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+
+.todo-container {
+    padding: 0 40px;
+    /* horizontal spacing from screen edge */
+
+}
+
+#todo-list {
+    padding: 0
+}
+
+#todo-list:focus {
+    outline: none;
+}
+
+#todo-list li {
+    position: relative;
+    margin: 16px;
+    padding: 0.5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 3em;
+    list-style: none;
+
+    min-height: 140px;
+
+    transform: rotate(0.5deg);
+    isolation: isolate;
+}
+
+#todo-list li:nth-child(2n+1) {
+    transform: rotate(-0.5deg);
+}
+
+#todo-list li:nth-child(2n+1)::after {
+    background: rgb(255, 0, 251);
+}
+
+/* pink card layer */
+#todo-list li::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: deeppink;
+    z-index: 1;
+}
+
+/* white floating border behind */
+#todo-list li::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    background-color: white;
+    transform: translate(-6px, 6px);
+    z-index: 0;
+}
+
+/* real content */
+#todo-list li>* {
+    position: relative;
+    z-index: 2;
+}
+
+#todo-list li .text {
+    position: relative;
+    z-index: 2;
+}
+
+#todo-list .text {
+    font-size: 250%;
+}
+
+/* Form CSS */
+#todo-form {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* labels */
+#todo-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* inputs */
+#todo-form input,
+#todo-form textarea,
+#todo-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+#todo-form textarea {
+    min-height: 80px;
+    min-width: 100%;
+}
+
+
+#todo-form button {
+    margin-top: 20px;
+}
+
+.todo-content-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.todo-content-others {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85em;
+    color: #fff;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Description */
+.desc {
+    font-style: italic;
+    color: white;
+}
+
+/* Priority */
+.priority {
+    font-weight: bold;
+}
+
+/* Deadline */
+.deadline {
+    font-weight: bold;
+}
+
+.createDate {
+    font-weight: bold;
+}
